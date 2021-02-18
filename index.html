@@ -1,26 +1,59 @@
 <!DOCTYPE html>
-<head>
-    <!--Whatever goes into the head-->
-</head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+<html>
+    <head>
+        <!--Whatever goes into the head-->
+    </head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
 
-<body>
-    <header>
-        <ul>
-            <li class="left-nav"><a href="#">About</a></li>
-            <li class="left-nav"><a href="#">Store</a></li>
-            <li class="right-nav"><a href="#">Sign-in button</a></li>
-            <li class="right-nav"><a href="#">Google Apps</a></li>
-            <li class="right-nav"><a href="#">Images</a></li>
-            <li class="right-nav"><a href="#">Gmail</a></li>
-        </ul>
-    </header>
+    <body>
+        <div class="container">
+                <header>
+                    <ul class="left-nav">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Store</a></li>
+                    </ul>
+                    <ul class="right-nav">
+                        <li><a href="#">Gmail</a></li>
+                        <li><a href="#">Images</a></li>
+                        <li id="google-apps-li"><a href="#">
+                            <div id="google-apps">
+                                <div class="google-apps-box"></div>
+                                <div class="google-apps-box"></div>
+                                <div class="google-apps-box"></div>
+                                <div class="google-apps-box"></div>
+                                <div class="google-apps-box"></div>
+                                <div class="google-apps-box"></div>
+                                <div class="google-apps-box"></div>
+                                <div class="google-apps-box"></div>
+                                <div class="google-apps-box"></div>
+                                <div class="google-apps-box"></div>
+                            </div>
+                        </a></li>
+                        <li class="no-padding">
+                            <a href="#">
+                                <div style="margin-left: 10px;">
+                                    <div id="sign-in-button">
+                                        Sign In
+                                    </div>
+                                <div>
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+            <div id="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>
+            <div id="search-bar-container">
+                <img id="magnifying-glass" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2017%2F01%2F13%2F01%2F22%2Fmagnifying-glass-1976105_960_720.png&f=1&nofb=1">
+                <form id="search-bar-form" action="/action_page.php" method="get">
+                    <input type="text" id="search-bar" name="search-bar">
+                </form>
+                <div id="voicebox"></div>
+            </div>
+        </div>
 
-    <div>
-        <!--Main content-->
-    </div>
-
-    <footer>
-        <!--Whatver goes into the footer-->
-    </footer>
-</body>
+        <footer>
+            <!--Whatver goes into the footer-->
+        </footer>
+    </body>
+</html>

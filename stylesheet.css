@@ -1,6 +1,10 @@
 header {
-    margin-top: 14px;
-    margin-left: 9px;
+    min-width: 925px;
+    margin-right: 40px;
+}
+
+body {
+    margin: 2px;
 }
 
 ul {
@@ -11,8 +15,8 @@ ul {
 }
 
 li {
-    display: block;
-    padding: 9px;
+    display: inline-block;
+    padding: 7px;
     font-size: 13px;
     font-family: arial,sans-serif;
 }
@@ -22,10 +26,127 @@ a {
     color: rgba(0, 0, 0, 0.671);
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+input:focus {
+    outline: none;
+}
+
 .left-nav {
     float: left;
 }
 
 .right-nav {
     float: right;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.container {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "logo"
+        "search-bar"
+        "buttons";
+}
+
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    display: box;
+}
+
+#search-bar-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#search-bar-container:hover  {
+    box-shadow: 0px 0px 5px 1px rgb(230, 230, 230);
+}
+
+#search-bar-container:focus-within {
+    box-shadow: 0px 0px 5px 1px rgb(230, 230, 230);
+}
+
+#magnifying-glass {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    height: 18px;
+    width: 18px;
+}
+
+#search-bar {
+    line-height: 34px;
+    height: 34px;
+    border: none;
+    width: 400px;
+    font-size: 16px;
+}
+
+#search-bar-form {
+    height: 34px;
+}
+
+#voicebox {
+    background: url('//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    height: 28px;
+    width: 28px;
+    background-size: 28px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#google-apps-li {
+    vertical-align: top;
+}
+
+#google-apps {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(3, 4px);
+    grid-template-rows: repeat(3, 4px);
+}
+
+#google-apps > div{
+    background: rgba(0, 0, 0, 0.671);
+}
+
+#google-apps:hover > div {
+    background: black;
+}
+
+
+#sign-in-button {
+    background-color:#4285f4;
+    border-radius: 3px;
+    padding: 7px 13px 8px 13px;
+    color: white;
+    font-weight: 900;
+}
+
+#sign-in-button:hover {
+    text-decoration: none;
+    cursor: default;
 }
