@@ -1,4 +1,18 @@
-body {
-    background-color: rgb(59, 59, 59);
-    color: white;
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+.left-nav {
+    float: left;
+}
+
+.right-nav {
+    float: right;
+}
+
+li {
+    display: inline;
 }
