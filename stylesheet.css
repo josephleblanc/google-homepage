@@ -1,8 +1,25 @@
+header {
+    margin-top: 14px;
+    margin-left: 9px;
+}
+
 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     display: inline;
+}
+
+li {
+    display: block;
+    padding: 9px;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.671);
 }
 
 .left-nav {
@@ -11,8 +28,4 @@ ul {
 
 .right-nav {
     float: right;
-}
-
-li {
-    display: inline;
 }
