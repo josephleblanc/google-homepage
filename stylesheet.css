@@ -80,16 +80,18 @@ input:focus {
 }
 
 #search-bar-container:hover  {
-    box-shadow: 0px 0px 5px 1px rgb(230, 230, 230);
+    box-shadow: 0px 2px 7px 2px rgb(214, 213, 213);
+    border: 1px solid transparent;
 }
 
 #search-bar-container:focus-within {
-    box-shadow: 0px 0px 5px 1px rgb(230, 230, 230);
+    box-shadow: 0px 2px 7px 2px rgb(214, 213, 213);
+    border: 1px solid transparent;
 }
 
 #magnifying-glass {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: 10px;
     height: 18px;
     width: 18px;
@@ -112,10 +114,29 @@ input:focus {
     height: 28px;
     width: 28px;
     background-size: 28px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.buttons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.button {
+    font-size: 14px;
+    padding: 15px;
+    color:rgb(107, 107, 107);
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 #google-apps-li {
