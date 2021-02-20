@@ -56,6 +56,10 @@ footer > ul.left {
     margin-left: 10px;
 }
 
+footer > ul.right {
+    margin-right: 20px;
+}
+
 footer > ul > li {
     margin-top: 7px;
 }
