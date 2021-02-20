@@ -1,6 +1,8 @@
 header {
     min-width: 925px;
     margin-right: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 body {
@@ -21,9 +23,13 @@ li {
     font-family: arial,sans-serif;
 }
 
-a {
+header > ul > li > a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.671);
+}
+
+a {
+    text-decoration: none;
 }
 
 a:hover {
@@ -34,11 +40,38 @@ input:focus {
     outline: none;
 }
 
-.left-nav {
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 925px;
+    background-color:rgb(241, 241, 241);
+    height: 40px;
+    border-top: 0.5px solid lightgrey;
+}
+
+footer > ul.left {
+    margin-left: 10px;
+}
+
+footer > ul > li {
+    margin-top: 7px;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color:rgb(107, 107, 107);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.left {
     float: left;
 }
 
-.right-nav {
+.right {
     float: right;
 }
 
@@ -47,8 +80,6 @@ input:focus {
 }
 
 .container {
-    margin-top: 15px;
-    margin-left: 15px;
     width: 100%;
     display: grid;
     grid-template-areas: 
@@ -159,15 +190,16 @@ input:focus {
 }
 
 
-#sign-in-button {
+div.sign-in-button {
     background-color:#4285f4;
     border-radius: 3px;
     padding: 7px 13px 8px 13px;
     color: white;
     font-weight: 900;
+    margin-left: 10px;
 }
 
-#sign-in-button:hover {
-    text-decoration: none;
+.sign-in-button:hover {
     cursor: default;
+    text-decoration: none;
 }
